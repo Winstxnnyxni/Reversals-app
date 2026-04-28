@@ -415,6 +415,12 @@ def form_has_unsaved_data():
 init_db()
 ensure_optional_columns()
 
+from create_user import create_user
+try:
+    create_user("admin", "1234")
+except:
+    pass
+
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "clear_draft_note" not in st.session_state:
