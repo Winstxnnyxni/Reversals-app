@@ -3,6 +3,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-data/*.db
+!data/app.db
 
 .env
